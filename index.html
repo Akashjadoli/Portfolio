@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKASH — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- BACKGROUND EFFECTS -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise-overlay"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- NAVBAR -->
+  <!-- ══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">AK/SH</a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- HERO SECTION -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="home">
+    <div class="hero-inner">
+
+      <!-- LEFT SIDE -->
+      <div class="hero-left">
+        <div class="hero-tag">
+          <span></span> Available for Opportunities
+        </div>
+        <h1 class="hero-name">AKASH</h1>
+        <p class="hero-role">
+          <span>BCA Graduate</span> from MDU University &nbsp;·&nbsp;
+          <span>Web Developer</span><br>
+          Passionate about Software Development &nbsp;·&nbsp; <span>Problem Solver</span>
+        </p>
+        <p class="hero-desc">
+          Passionate about building impactful digital solutions, continuously learning new technologies, and solving real-world coding problems.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE — 3D CARD -->
+      <div class="hero-right">
+        <div class="dev-card-wrap">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="dev-card" id="heroCard">
+            <div class="card-avatar">A</div>
+            <div class="card-name">AKASH</div>
+            <div class="card-title">Software Developer</div>
+            <div class="card-divider"></div>
+            <div class="card-chips">
+              <span class="chip">React.js</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Java</span>
+              <span class="chip">DSA</span>
+              <span class="chip">MySQL</span>
+            </div>
+            <div class="card-status">
+              <span class="status-dot"></span>
+              Open to Work · Noida, India
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- ABOUT SECTION -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-wrap">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">WHO I <span>AM</span></h2>
+
+      <div class="about-grid">
+
+        <!-- BIO TEXT -->
+        <div class="about-text reveal">
+          <p>
+            I am a <strong>BCA graduate from Maharshi Dayanand University</strong> with a strong interest in software and web development. I am always curious about learning new technologies and enjoy solving coding challenges.
+          </p>
+          <p>
+            I love building <strong>modern digital products</strong> and continuously improving my development skills. I believe every project teaches something valuable — whether it's a clean architecture pattern or a humbling 3 AM bug.
+          </p>
+          <p>
+            Sometimes I also pretend bugs disappear when I stare at the screen long enough.
+          </p>
+        </div>
+
+        <!-- STAT CARDS -->
+        <div class="stats-grid reveal reveal-d2">
+          <div class="stat-card tilt-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">DSA Problems Solved</div>
+          </div>
+          <div class="stat-card tilt-card">
+            <div class="stat-number">7.4</div>
+            <div class="stat-label">CGPA</div>
+          </div>
+          <div class="stat-card tilt-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-card tilt-card">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- EDUCATION SECTION -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="education">
+    <div class="section-wrap">
+      <div class="section-label">Education</div>
+      <h2 class="section-title">MY <span>JOURNEY</span></h2>
+      <p class="section-sub">Academic foundation that shaped my technical thinking and problem-solving approach.</p>
+
+      <div class="reveal">
+        <div class="edu-card tilt-card">
+          <div>
+            <div class="edu-uni">Maharshi Dayanand University</div>
+            <div class="edu-degree">BACHELOR OF<br>COMPUTER APPLICATIONS</div>
+            <div class="edu-college">JB College, Faridabad</div>
+            <div class="edu-tags">
+              <span class="edu-tag">Full Stack Development</span>
+              <span class="edu-tag">DSA</span>
+              <span class="edu-tag">DBMS</span>
+              <span class="edu-tag">OOPs</span>
+            </div>
+          </div>
+          <div class="edu-year">2023 – 2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- SKILLS SECTION -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="section-label">Skills</div>
+      <h2 class="section-title">TECH <span>STACK</span></h2>
+      <p class="section-sub">Tools and technologies I've mastered through projects, coursework, and self-learning.</p>
+
+      <div class="skills-categories">
+
+        <div class="skill-category tilt-card reveal">
+          <div class="skill-cat-title"><span class="cat-icon">🎨</span> Frontend</div>
+          <div class="skill-items">
+            <span class="skill-item">HTML5</span>
+            <span class="skill-item">CSS3</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">React.js</span>
+          </div>
+        </div>
+
+        <div class="skill-category tilt-card reveal reveal-d1">
+          <div class="skill-cat-title"><span class="cat-icon">⚙️</span> Backend</div>
+          <div class="skill-items">
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">Express.js</span>
+            <span class="skill-item">REST API</span>
+          </div>
+        </div>
+
+        <div class="skill-category tilt-card reveal reveal-d2">
+          <div class="skill-cat-title"><span class="cat-icon">💻</span> Languages</div>
+          <div class="skill-items">
+            <span class="skill-item">C</span>
+            <span class="skill-item">C++</span>
+            <span class="skill-item">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-category tilt-card reveal reveal-d1">
+          <div class="skill-cat-title"><span class="cat-icon">🗄️</span> Database</div>
+          <div class="skill-items">
+            <span class="skill-item">SQL</span>
+            <span class="skill-item">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category tilt-card reveal reveal-d2">
+          <div class="skill-cat-title"><span class="cat-icon">🧠</span> CS Fundamentals</div>
+          <div class="skill-items">
+            <span class="skill-item">DSA in Java</span>
+            <span class="skill-item">OOPs</span>
+            <span class="skill-item">DBMS</span>
+          </div>
+        </div>
+
+        <div class="skill-category tilt-card reveal reveal-d3">
+          <div class="skill-cat-title"><span class="cat-icon">🔧</span> Tools</div>
+          <div class="skill-items">
+            <span class="skill-item">VS Code</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">GitHub</span>
+            <span class="skill-item">Chrome DevTools</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- PROJECTS SECTION -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="section-label">Projects</div>
+      <h2 class="section-title">WHAT I'VE <span>BUILT</span></h2>
+      <p class="section-sub">Real-world projects solving real problems — built with intention and shipped with care.</p>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card tilt-card reveal">
+          <div class="proj-num">PROJECT 001</div>
+          <div class="proj-name">LowestKart</div>
+          <p class="proj-desc">
+            An AI-powered smart shopping assistant that analyzes user cart data, compares prices across platforms, identifies the lowest available price, detects unused coupons on the phone, and applies the best discount automatically to help users save money during shopping.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">AI</span>
+            <span class="proj-tag">Price Comparison</span>
+            <span class="proj-tag">Smart Coupons</span>
+            <span class="proj-tag">Web App</span>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card tilt-card reveal reveal-d2">
+          <div class="proj-num">PROJECT 002</div>
+          <div class="proj-name">PriceIQ</div>
+          <p class="proj-desc">
+            An Intelligent Pricing Strategy Dashboard that helps businesses decide the best product pricing using intelligent analytics. It analyzes pricing trends, customer behavior, and revenue possibilities to suggest the most profitable pricing strategy.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">Analytics</span>
+            <span class="proj-tag">Dashboard</span>
+            <span class="proj-tag">Pricing AI</span>
+            <span class="proj-tag">Business</span>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- LEARNING JOURNEY SECTION -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="learning">
+    <div class="section-wrap">
+      <div class="section-label">Learning Journey</div>
+      <h2 class="section-title">HOW I <span>GREW</span></h2>
+      <div class="reveal">
+        <div class="learning-card tilt-card">
+          <p class="learning-text">
+            I learned software development fundamentals from <strong>Maharshi Dayanand University</strong> and advanced web development through self-learning and invaluable guidance from <strong>Sharadha Khapra Mam</strong> — whose teaching style made complex concepts feel natural and intuitive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-line"></div>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- CONTACT SECTION -->
+  <!-- ══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="open-badge">
+        <span class="status-dot"></span>
+        Open for Internship and Job Opportunities
+      </div>
+      <h2 class="contact-headline">LET'S BUILD<br>SOMETHING TOGETHER</h2>
+      <p class="contact-sub">
+        I am open for software development roles and excited to contribute to meaningful, impactful projects.
+      </p>
+
+      <div class="contact-cards">
+        <a href="tel:8745047175" class="contact-card">
+          <div class="contact-icon">📱</div>
+          <div class="contact-info">
+            <div class="contact-type">Phone</div>
+            <div class="contact-val">+91 8745047175</div>
+          </div>
+        </a>
+        <a href="mailto:suryavanshiakash1990@gmail.com" class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-info">
+            <div class="contact-type">Email</div>
+            <div class="contact-val">suryavanshiakash1990@gmail.com</div>
+          </div>
+        </a>
+      </div>
+
+      <a href="mailto:suryavanshiakash1990@gmail.com" class="btn btn-primary">Send a Message →</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-left">Design and Built by <span>Akash</span></div>
+    <div class="footer-right">Noida, India</div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts.js"></script>
+
+</body>
+</html>
