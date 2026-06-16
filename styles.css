@@ -1104,3 +1104,30 @@ footer {
   .skills-categories { grid-template-columns: 1fr; }
   .stats-grid        { grid-template-columns: 1fr 1fr; }
 }
+.proj-links {
+  margin-top: 16px;
+}
+
+.live-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  background: transparent;
+  border: 1.5px solid #4f9eff;
+  color: #4f9eff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+}
+
+.live-btn:hover {
+  background: linear-gradient(135deg, #4f9eff, #0057ff);
+  color: #fff;
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(79, 158, 255, 0.4);
+}
